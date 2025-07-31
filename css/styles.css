@@ -1,0 +1,312 @@
+
+body {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+  }
+
+.about {
+
+ padding-right: 20px;
+
+}
+
+.about h1 {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -2%;
+  color: #BEA69E;
+  width: 100%;
+  height: 72px;
+  opacity: 1;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 1px #BEA69E;
+  border-bottom: solid 1px #BEA69E;
+  flex-shrink: 0;
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.about-h1 {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.about h1 span {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -2%;
+  color: #FFFFFF;
+
+}
+
+.about-container {
+  width: 100%;
+  height: 962px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: center;
+  background-color: #121212;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;  
+}
+
+.about h2 {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -4%;
+  color: #FFFFFF;
+  padding-left: 20px;
+}
+
+.about h2 span {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -4%;
+  color: #BEA69E;
+}
+
+.about .photography {
+  display: block;
+  max-width: 100%;
+  height: 209px;
+  border-radius: 1000px;
+}
+
+.about .first-p, .second-p {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -2%;
+  color: #FFFFFF;
+  padding-left: 20px;
+}
+
+
+/*Mobile*/
+@media (min-width: 320px) and (max-width: 375px) {
+  .about .photography {
+  width: 335px;
+  height: 209px;
+  border-radius: 1000px;
+}
+}
+
+
+/*Tablet*/
+
+@media (min-width: 768px) and (max-width: 1279px) {
+
+  .about h1, 
+  .about h1 span {
+    width: 840px;
+    height: 50px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .about-container {
+    padding-left: 32px;
+    padding-right: 32px;
+    gap: 50px;
+  }
+
+  .about h2, 
+  .about h2 span {
+    font-size: 48px;
+    line-height: 54px;
+  }
+
+  .about .photography {
+    width: 488px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about .first-p, .second-p {
+    font-size: 16px;
+    line-height: 20px;
+    gap: 40px;
+
+  }
+}
+
+
+/*1280px*/
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .about {
+    padding-left: 64px;
+  }
+
+  .about h1 {
+    font-size: 59px;
+    line-height: 64px;
+    width: 100%;
+  }
+
+  .about h1 span {
+    font-size: 59px;
+    line-height: 64px;
+
+  }
+
+  .about-container {
+    padding-left: 64px;
+    padding-right: 64px;
+    gap: 50px;
+
+  }
+
+  .about-container-item {
+    display: flex;
+    flex-direction: row;
+
+}
+
+  .about .first-p {
+    width: 268px;
+    height: 260px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+  .about .second-p {
+    width: 264px;
+    height: 215px;
+    font-size: 16px;
+    line-height: 20px;
+    }
+
+
+  .about h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .about .photography {
+    width: 488px;
+    height: 260px;
+    border-radius: 1000px;
+  }
+
+  .about .first-p, .second-p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about h1 {
+    font-size: 59px;
+    line-height: 64px;
+  }
+
+  .about h1 span {
+   font-size: 59px;
+   line-height: 64px;
+   display: flex;
+  }
+
+  .about-container {
+    display: flex;
+    gap: 50px;
+  }
+
+ .about-container-item {
+    display: flex;
+    gap: 50px;
+    padding-left: 80px;
+    padding-right: 100px;
+}
+
+  .about h2 {
+    font-size: 48px;
+    line-height: 54px;
+    padding-left: 80px;
+
+  }
+
+  .about h2 span {
+    font-size: 48px;
+    line-height: 54px;
+  }
+
+  .about .photography {
+   width: 480px;
+   height: 240px;
+
+  }
+
+  .about .first-p {
+    width: 314px;
+    height: 220px;
+    font-size: 16px;
+    line-height: 20px;
+  
+    }
+
+  .about .second-p {
+    width: 276px;
+    height: 215px;
+    font-size: 16px;
+    line-height: 20px;
+   
+  }
+
+}
+
