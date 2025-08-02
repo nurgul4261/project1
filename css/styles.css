@@ -27,7 +27,7 @@ body {
   font-style: Regular;
   font-size: 28px;
   line-height: 32px;
-  letter-spacing: -2%;
+  letter-spacing: 0.02em;
   color: #BEA69E;
   width: 100%;
   height: 72px;
@@ -69,7 +69,7 @@ body {
   font-style: Regular;
   font-size: 28px;
   line-height: 32px;
-  letter-spacing: -2%;
+  letter-spacing: 0.02em;
   color: #FFFFFF;
 
 }
@@ -94,7 +94,7 @@ body {
   font-style: Medium;
   font-size: 28px;
   line-height: 32px;
-  letter-spacing: -4%;
+  letter-spacing: 0.04em;
   color: #FFFFFF;
   padding-left: 20px;
 }
@@ -105,7 +105,7 @@ body {
   font-style: Medium;
   font-size: 28px;
   line-height: 32px;
-  letter-spacing: -4%;
+  letter-spacing: 0.04em;
   color: #BEA69E;
 }
 
@@ -122,7 +122,7 @@ body {
   font-style: Regular;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: -2%;
+  letter-spacing: 0.02em;
   color: #FFFFFF;
   padding-left: 20px;
 }
@@ -131,9 +131,10 @@ body {
 /*Mobile*/
 @media (min-width: 320px) and (max-width: 375px) {
   .about .photography {
-  width: 335px;
-  height: 209px;
-  border-radius: 1000px;
+    display: block;
+    max-width: 100%;
+    height: 209px;
+    border-radius: 1000px;
 }
 }
 
@@ -166,8 +167,6 @@ body {
     width: 488px;
     height: 260px;
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .about .first-p, .second-p {
@@ -287,7 +286,7 @@ body {
   }
 
   .about .photography {
-   width: 480px;
+   width: 560px;
    height: 240px;
 
   }
