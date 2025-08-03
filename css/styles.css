@@ -110,8 +110,7 @@ body {
 }
 
 .about .photography {
-  display: block;
-  max-width: 100%;
+  width: 335px;
   height: 209px;
   border-radius: 1000px;
 }
@@ -129,6 +128,13 @@ body {
 
 
 /*Mobile*/
+
+@media (min-width: 320px) and (max-width: 375px) {
+.about .photography {
+   display: block;
+   max-width: 100%;
+}
+}
 
 @media (min-width: 375px) and (max-width: 767px) {
   .about .photography {
