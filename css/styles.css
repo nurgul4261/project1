@@ -130,13 +130,6 @@ body {
 
 /*Mobile*/
 
-@media (min-width: 320px) and (max-width: 375px) {
-  .about .photography {
-    max-width: 100%;
-    display: block;
-  }
-}
-
 @media (min-width: 375px) and (max-width: 767px) {
   .about .photography {
     width: 335px;
